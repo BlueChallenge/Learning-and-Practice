@@ -1,0 +1,10 @@
+1.下载镜像安装文件：
+  https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh
+2.用文本编辑器打开install.sh，分别更新REPO和REMOTE，以从国内镜像源下载Oh My Zsh仓库
+
+  REPO=${REPO:-ohmyzsh/ohmyzsh}  ->  REPO=${REPO:-mirrors/ohmyzsh}
+  REMOTE=${REMOTE:-https://github.com/${REPO}.git}  ->  REMOTE=${REMOTE:-https://gitee.com/${REPO}.git}
+3.保存install.sh更新。
+4.打开Terminal，用如下命令更新文件权限并运行
+  chmod +x [install.sh完整路径] && [install.sh完整路径]
+5.安装成功
